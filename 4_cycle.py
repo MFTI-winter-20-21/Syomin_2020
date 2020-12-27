@@ -15,5 +15,5 @@ if u == 1:
         else:
             print("Нуу, не совсем верно.")
 else:
-    print("А вот и решение: math.sqrt(6**2 + 8**2")
+    print("А вот и решение: math.sqrt(6**2 + 8**2)")
 exit("")
