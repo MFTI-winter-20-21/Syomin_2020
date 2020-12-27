@@ -7,4 +7,4 @@ if user_old < 18:
     print("Sorry, but u aren't allowed to be on this site")
 else:
     country = input("Where are u from?")
-print("So u",user_name, "u", user_old, "and u from", country, "right?")
+    print("So u",user_name, "u", user_old, "and u from", country, "right?")
