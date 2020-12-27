@@ -14,8 +14,8 @@ while game != number:
     elif 6 < a:
         step = "неплох."
     number = int(input('Введи число от 1 до 100: '))
-    if 1 < number > 100:
-        print(" ОТ 1 ДО 100)")
+    if number > 100 or number < 1:
+        print("ОТ 1 ДО 100")
     if number < game:
         print ('Твое число меньше загаднного, смотри выше!')
     if number > game:
