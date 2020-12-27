@@ -6,4 +6,4 @@ if 4 <= user_old >= 130:
 if user_old < 18:
     print("Sorry, but u aren't allowed to be on this site")
 else:
-    country = input("Where are u from?"
+    country = input("Where are u from?")
