@@ -1,8 +1,11 @@
-slova = []
-a = int(input("Сколько слов вы хотите проверить?", ))
-while a != 0:
-    new = input("Ваше слово? Все слова писать маленькими буквами", )
-    if new == new[::-1]:
-        slova.append(new)
-    a -= 1
-print("все эти слова палиндропы:", ', '.join(slova))
+slova = input('Какте слова вы хотите проверить?').lower().split()
+palindrops = []
+for word in slova:
+    if word == word[::-1]:
+        palindrops.append(word)
+if len(palindrops) <= 0:
+    print('Падиндропов не обнаруженно')
+else:
+    print("А вот и падиндропы", ', '.join(palindrops))
+
+
