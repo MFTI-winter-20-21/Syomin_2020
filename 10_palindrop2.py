@@ -5,4 +5,4 @@ while a != 0:
     if new == new[::-1]:
         slova.append(new)
     a -= 1
-print("все эти слова палиндропы", slova)
+print("все эти слова палиндропы:", ', '.join(slova))
