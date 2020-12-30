@@ -30,7 +30,7 @@ if uroveni == 'лёгкий':
                                 print("Не угадал, попробуй ещё раз")
                             if int(code_list[2]) == int(code_otvet[2]):
                                 print('О! Ты угадал всё число!')
-                                print('{0}, на угадваание загаданного числа у тебя ушло:'.format(name), kolichestvo_popitok, 'попыток')
+                                print('{0}, на угадывание загаданного числа у тебя ушло:'.format(name), kolichestvo_popitok, 'попыток')
                                 game_status = False
         elif len(code_otvet) > 3:
             print("Это не трёхзначное число")
@@ -52,7 +52,7 @@ elif uroveni == 'нормальный':
 
         elif user_number == code:
             print("Ты угадал")
-            print('{0}, на угадвание загаданного числа у тебя ушло:'.format(name), kolichestvo_popitok_1, 'попыток.')
+            print('{0}, на угадывание загаданного числа у тебя ушло:'.format(name), kolichestvo_popitok_1, 'попыток.')
             exit("")
         else:
             for d in code:
