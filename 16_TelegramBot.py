@@ -1,10 +1,10 @@
 import telebot
 
-bot = telebot.TeleBot('abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890')
+bot = telebot.TeleBot('1421501275:AAHkZlZ6wW48mM9DGJhHAzePepxAftOPPtI')
 
 @bot.message_handler(content_types=['text'])
 def otvet_na_text(message):
     print(message)
-    bot.send_message(message.chat.id, message.text[::-1] )
+    bot.send_message(message.chat.id, message.text["Hello World"] )
 
 bot.polling()
