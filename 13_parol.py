@@ -1,9 +1,13 @@
-import random
-simvols = list('+-/*!&$#?=@<>abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890')
-kolichestvo_simbols = int(input('длина пароля?\n', ))
-lenght = 8
-parol = ''
-while lenght != 0:
-    parol += simvols[random.randint(0, 76)]
-    lenght -= 1
-print(parol)
+a = [[["a"], ["b"]], [["c"], ["d"]]]
+count = 0
+
+for i in range(len(a)):
+    print("Число i:", i)
+
+    for j in range(len(a[i])):
+        print("Длина i-того списка из pointsnap:", len(a[i]))
+        print("Число j:", j)
+        a[i][j].append(str(count))
+        count += 1
+
+print(a)

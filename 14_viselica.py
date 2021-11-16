@@ -22,13 +22,13 @@ def hangman():
              lives -= 1
              print ('\nНеа.')
              print ('\n''ещё попыток', lives)
-             if lives < 5: print ('\n  |  ')
-             if lives < 4: print ('  O  ')
-             if lives < 3: print (' /|\ ')
-             if lives < 2: print ('  |  ')
-             if lives < 1: print (' / \ ')
+             if lives < 5: print('\n  |  ')
+             if lives < 4: print('  O  ')
+             if lives < 3: print(' /|\ ')
+             if lives < 2: print('  |  ')
+             if lives < 1: print(' / \ ')
              if lives == 0:
-                 print ('\n\nА вот и загаданное слово', word)
+                 print ('\n\nА вот и загаданное слово:', word)
 game_status = 'да'
 while game_status == 'да':
     hangman()

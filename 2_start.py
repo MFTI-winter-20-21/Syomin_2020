@@ -1,10 +1,23 @@
-user_name = input("Hello, what's your name?")
-print("Hello", user_name)
-user_old = 2020 - int(input("What year were you born?", ))
-if 4 <= user_old >= 130:
-    exit(" Are u a dino or an alien?")
-if user_old < 18:
-    print("Sorry, but u aren't allowed to be on this site")
+a = input("Введите текст: ").lower()
+d = []
+c = []
+
+for i in a:
+    if i in ['у', 'е', 'ё', 'ы', 'а', 'о', 'э', 'я', 'и', 'ю'] or i in ['e', 'y', 'u', 'i', 'o', 'a']:
+        d.append(i)
+    else:
+        c.append(i)
+
+print("Всего символов: ", len(a))
+print("Гласных букв: ", len(d))
+print("Согласных букв :", len(c))
+b = (len(d) / len(c)) * 100
+if b - int(b) == 0:
+    print("Процентное соотношение гласных к согласным: ", int(b))
 else:
-    country = input("Where are u from?")
-    print("So u", user_name, "u", user_old, "years", "and u from", country, "right?")
+    print("Процентное соотношение гласных к согласным: ", round(b, 2))
+
+
+
+
+

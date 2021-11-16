@@ -12,11 +12,10 @@ def spis(a, b, c):
         print(z)
 
     elif len(c) == b:
-        z = []
-        for i in c[0:len(c)-1]:
-            z.append(i)
+        z = [1]*b
+        for i in c:
+            z[c.index(i)] = i
         z.append(a)
-        z.append(c[len(c) - 1])
         print(z)
 
     else:
@@ -25,11 +24,15 @@ def spis(a, b, c):
             z.append(a)
             for i in c:
                 z.append(i)
-
+        elif b == 1:
+            z.append(c[0])
+            z.append(a)
+            for i in c[1:len(c)]:
+                z.append(i)
         else:
-            for i in c[0:b-1]:
+            for i in c[0:b]:
                 z.append(i)
             z.append(a)
-            for i in c[b-1:len(c)]:
+            for i in c[b:len(c)]:
                 z.append(i)
         print(z)
